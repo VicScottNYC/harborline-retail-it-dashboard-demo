@@ -2,6 +2,8 @@
 
 A FastAPI backend for a retail IT operations dashboard. It loads a device inventory file, validates the whole import before using it, derives connection, support, and health status for each device, and serves device lists with optional store filtering.
 
+[Download the Harborline project brochure (PDF)](docs/Harborline_Project_Brochure.pdf)
+
 ## Dashboard screenshots
 
 These captures show the local Harborline dashboard using fictional inventory.
@@ -14,7 +16,6 @@ These captures show the local Harborline dashboard using fictional inventory.
 
 ![Hoboken critical device inventory with an expanded device record](docs/screenshots/device-triage.jpg)
 
-[Download the Harborline project brochure (PDF)](docs/Harborline_Project_Brochure.pdf)
 
 ## Features
 
