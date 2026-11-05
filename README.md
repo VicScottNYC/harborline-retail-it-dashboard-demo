@@ -14,6 +14,8 @@ These captures show the local Harborline dashboard using fictional inventory.
 
 ![Hoboken critical device inventory with an expanded device record](docs/screenshots/device-triage.jpg)
 
+[Download the Harborline project brochure (PDF)](docs/Harborline_Project_Brochure.pdf)
+
 ## Features
 
 - **Whole-file validation.** If any record or catalog entry is invalid, nothing is served. `/devices` returns HTTP 503 with a clear list of errors.
