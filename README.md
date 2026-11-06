@@ -1,21 +1,37 @@
-# Harborline Retail IT Operations API (Demo data)
+<div align="center">
+
+# Harborline Retail IT Operations API
+
+### Fleet health for multi-store retail IT (demo data)
 
 A FastAPI backend for a retail IT operations dashboard. It loads a device inventory file, validates the whole import before using it, derives connection, support, and health status for each device, and serves device lists with optional store filtering.
 
-[Download the Harborline project brochure (PDF)](docs/Harborline_Project_Brochure.pdf)
+**[Download the Harborline project brochure (PDF)](https://github.com/VicScottNYC/harborline-retail-it-dashboard-demo/raw/main/docs/Harborline_Project_Brochure.pdf)**
+
+![Python](https://img.shields.io/badge/Python-3.10+-3776AB?logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?logo=fastapi&logoColor=white)
+![Uvicorn](https://img.shields.io/badge/Uvicorn-ASGI-499848)
+![OpenAPI](https://img.shields.io/badge/OpenAPI-Swagger%20UI-85EA2D?logo=swagger&logoColor=black)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?logo=pytest&logoColor=white)
+![Tests](https://img.shields.io/badge/tests-38%20passing-0ca30c)
+
+![Harborline dashboard showing fleet health summary and device inventory](docs/screenshots/fleet-overview.jpg)
+
+<sub>Fictional inventory: 4 stores, 168 devices.</sub>
+
+</div>
+
+---
 
 ## Dashboard screenshots
 
 These captures show the local Harborline dashboard using fictional inventory.
 
-**Fleet overview.** Health summaries and a searchable device inventory across four fictional stores.
-
-![Harborline dashboard showing fleet health summary and device inventory](docs/screenshots/fleet-overview.jpg)
+**Fleet overview.** Health summaries and a searchable device inventory across four fictional stores (shown above).
 
 **Device triage.** Filter to critical devices in Hoboken and expand a record to see the health reasons, issues, and suggested next action.
 
 ![Hoboken critical device inventory with an expanded device record](docs/screenshots/device-triage.jpg)
-
 
 ## Features
 
@@ -26,9 +42,11 @@ These captures show the local Harborline dashboard using fictional inventory.
 
 ## Tech stack
 
-- Python 3.10+
-- FastAPI, Uvicorn
-- pytest, with FastAPI's `TestClient`
+| Layer | Implementation |
+| --- | --- |
+| Language | Python 3.10+ |
+| API | FastAPI, Uvicorn |
+| Tests | pytest, with FastAPI's `TestClient` |
 
 ## Project structure
 
@@ -98,3 +116,11 @@ INVENTORY_PATH=/path/to/other_inventory.json uvicorn app:app --reload
 
 - `validate.py` can also be run directly as a standalone check against its sample cases, with `python validate.py`.
 - The app loads and validates the inventory once, when it starts. Restart the server after changing the file.
+
+---
+
+<div align="center">
+
+Built by **Victor Scott** · [github.com/VicScottNYC](https://github.com/VicScottNYC)
+
+</div>
